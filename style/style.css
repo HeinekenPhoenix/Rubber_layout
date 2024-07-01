@@ -1,0 +1,251 @@
+@import "./normalize.css";
+@import "./reset.css";
+
+body{
+    border-radius: 20px;
+    background-color: rgb(250,248,241);
+    width: 90%;
+    height: 90%;
+    box-shadow: 0px 0px 89.52px 0px rgb(202, 202, 202);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.navigation{
+    display: flex;
+    padding-left: 10%;
+    padding-top: 2%;
+    flex-wrap: wrap;
+}
+
+.navigation-logo-cont{
+    display: flex;
+    gap: 7%;
+    align-items: center;
+}
+
+.navigation-logo-cont__img{
+    width: 41px;
+    height: 40px;
+}
+
+.navigation__text{
+    color: rgb(14,41,76);
+    font-size: 3vh;
+    font-weight: 500;
+}
+
+.navigation-link-cont{
+    margin-left: 40%;
+    display: flex;
+    gap: 15%;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.navigation-icon-link-cont{
+    margin-left: 15%;
+    display: flex;
+    gap: 10%;
+    align-items: center;
+}
+
+.main{
+    display: flex;
+    gap: 10%;
+    margin-top: 5%;
+    padding-left: 17%;
+}
+
+.home-page-left-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    margin-top: 10%;
+    width: 35%;
+}
+
+.home-page-left-cont__title{
+    color: rgb(14,41,76);
+    font-size: 6vh;
+    line-height: 6vh;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.home-page-left-cont__dscr{
+    color: rgb(14,41,76);
+    font-size: 2vh;
+    line-height: 3vh;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.home-page-left-cont__btn{
+    width: 26vh;
+    height: 8vh;
+    background-color: rgb(14,41,76);
+    color: rgb(250,248,241);
+    font-size: 3.5vh;
+    border-radius: 180px;
+}
+
+
+
+@media screen and (max-height: 1030px) {
+    .home-page-right-cont__img{
+        height: 68%;
+        
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .main{
+        gap: 5%;
+        padding-left: 13%;
+    }
+}
+
+@media screen and (max-width: 1552px) {
+    .navigation-link-cont{
+        margin-left: 35%;
+    }
+    
+    .navigation-icon-link-cont{
+        margin-left: 10%;
+    }
+
+    .main{
+        gap: 3%;
+        padding-left: 10%;
+    }
+
+}
+
+@media screen and (max-width: 1402px) {
+    .navigation{
+        padding-left: 5%;
+    }
+    .main{
+        padding-left: 6%;
+    }
+    .navigation-link-cont{
+        margin-left: 35%;
+    }
+}
+
+@media screen and (max-width: 1358px) {
+    .home-page-right-cont__img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1323px) {
+    .navigation{
+        padding-left: 3%;
+    }
+    .main{
+        padding-left: 4%;
+    }
+    .home-page-right-cont__img{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .main{
+        margin-top: 0;
+    }
+
+    .home-page-right-cont__img{
+        display: none;
+    }
+    .navigation-link-cont{
+        margin-left: 25%;
+        gap: 10%;
+    }
+    .home-page-left-cont{
+        align-items: center;
+        width: 100%;
+        gap: 10%;
+        height: 40vh;
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 988px) {
+    .navigation-link-cont{
+        margin-left: 10%;
+        gap: 5%;
+    }
+    .home-page-left-cont{
+        margin-top: 30%;
+    }
+} 
+
+@media screen and (max-width: 750px) {
+    .navigation__text{
+        font-size: 2.5vh;
+    }
+    .home-page-left-cont{
+        margin-top: 35%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .navigation__text{
+        font-size: 2vh;
+    }
+    .home-page-left-cont{
+        margin-top: 40%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .navigation-logo-cont{
+        gap: 3%;
+    }
+
+    .navigation__text{
+        font-size: 3vh;
+        align-items: center;
+    }
+
+    .navigation-link-cont{
+        margin-left: 5%;
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .navigation-icon-link-cont{
+        margin-left: 30%;
+    }
+
+    .home-page-left-cont{
+        margin-top: 45%;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .navigation__text{
+        font-size: 2.5vh;
+    }
+
+    .home-page-left-cont__title{
+        font-size: 5vh;
+        line-height: 6vh;
+    }
+
+    .home-page-left-cont__dscr{
+        font-size: 1.5vh;
+    }
+}
